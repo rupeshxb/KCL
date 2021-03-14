@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KCL Landing page</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header starts -->
+
+    <header>
+      <div class="head"></div>
+    </header>
+
+    <!-- Header ends -->
+
+    <!-- Analog meter starts -->
+    <div class="container">
+      <div class="analog-meter-wrapper">
+        <div class="analog-meter">
+          <div class="bar-image">
+            <img src="assets/img/png/meter-bar.png" />
+            <span class="fear">Extreme Fear</span>
+            <span class="good">Extreme Good</span>
+          </div>
+          <div class="pin-image"><img src="assets/img/png/pin.png" /></div>
+        </div>
+        <div class="reactions">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="reaction-image">
+                <img src="assets/img/png/reaction-3.png" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="reaction-image">
+                <img src="assets/img/png/reaction-2.png" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="reaction-image">
+                <img src="assets/img/png/reaction-1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title">MARKET METER</div>
+        <div class="time-as-of-wrapper">
+          <div class="time-as-of">
+            As of&nbsp;<span id="as-of-date-time"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analog meter ends -->
+
+    <!-- Market overview starts -->
+
+    <div class="market-overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="summary">
+              <div class="custom-title">Market Summary</div>
+              <div class="single">
+                <span class="single-title">Total Turnover</span
+                ><span class="data">6,000,234,345.00</span>
+              </div>
+              <div class="single">
+                <span class="single-title">Total Shares Traded</span
+                ><span class="data">16,234,567</span>
+              </div>
+              <div class="single">
+                <span class="single-title">Total number of transaction</span
+                ><span class="data">45,547</span>
+              </div>
+              <div class="single">
+                <span class="single-title">Market Cap</span
+                ><span class="data">2,463,742.23 M</span>
+              </div>
+              <div class="single">
+                <span class="single-title">Floated Market Cap</span
+                ><span class="data">3,234,783.45 M</span>
+              </div>
+            </div>
+            <div class="top-turnover">
+              <div class="custom-title">Top Turnover</div>
+              <div class="responsive-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Symbol</th>
+                      <th>Turnover</th>
+                      <th>LTP</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <a href="#"> <span>UPPER</span> </a>
+                      </th>
+                      <th><span>232,123,456.00</span></th>
+                      <th>532.00</th>
+                    </tr>
+                    <tr>
+                      <th><a href="#">NIFRA</a></th>
+                      <th><span>458,845,532.00</span></th>
+                      <th>550.00</th>
+                    </tr>
+                    <tr>
+                      <th><a href="#">PLI</a></th>
+                      <th><span>123,456.00</span></th>
+                      <th>745.00</th>
+                    </tr>
+                    <tr>
+                      <th><a href="#">NABIL</a></th>
+                      <th><span>134,968,456.00</span></th>
+                      <th>1402.00</th>
+                    </tr>
+                    <tr>
+                      <th><a href="#">NLIC</a></th>
+                      <th><span>59,654,456.00</span></th>
+                      <th>1800.34</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="indicates">
+              <div class="custom-title">Indices</div>
+              <div class="responsive-table">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>NEPSE</th>
+                      <th>-1.6864%</th>
+                      <th>2,417.03</th>
+                    </tr>
+                    <tr>
+                      <th>Sensitive</th>
+                      <th>+1.9548%</th>
+                      <th>436.53</th>
+                    </tr>
+                    <tr>
+                      <th>Float</th>
+                      <th>-1.4694%</th>
+                      <th>166.47</th>
+                    </tr>
+                    <tr>
+                      <th>Sen. Float</th>
+                      <th>+1.5759%</th>
+                      <th>141.66</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="sub-indicates">
+              <div class="custom-title">Sub Indices</div>
+              <div class="responsive-table">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Banking</th>
+                      <th><span>-1.6024%</span></th>
+                      <th><span>1,734.80</span></th>
+                    </tr>
+                    <tr>
+                      <th>Trading</th>
+                      <th><span>-5.8043%</span></th>
+                      <th><span>3,710.93</span></th>
+                    </tr>
+                    <tr>
+                      <th>Hotels And Tourism</th>
+                      <th><span>3.128%</span></th>
+                      <th><span>2,479.88</span></th>
+                    </tr>
+                    <tr>
+                      <th>Development Bank</th>
+                      <th><span>-1.5483%</span></th>
+                      <th><span>2,492.81</span></th>
+                    </tr>
+                    <tr>
+                      <th>Hydropower</th>
+                      <th><span>2.1834%</span></th>
+                      <th><span>2,104.42</span></th>
+                    </tr>
+                    <tr>
+                      <th>Finance</th>
+                      <th><span>-1.7568%</span></th>
+                      <th><span></span>1,124.04</th>
+                    </tr>
+                    <tr>
+                      <th>Microfinance</th>
+                      <th><span>-1.3985%</span></th>
+                      <th><span>4,142.31</span></th>
+                    </tr>
+                    <tr>
+                      <th>Non-Life Insurance</th>
+                      <th><span>-2.2684%</span></th>
+                      <th><span>12,161.18</span></th>
+                    </tr>
+
+                    <tr>
+                      <th>Life Insurance</th>
+                      <th><span>-2.194%</span></th>
+                      <th><span>15,939.09</span></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="view-more">
+                <a href="#"
+                  >Show More<span><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-gainer-loser">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="gainer">
+                <div id="gainer-title" class="custom-title-second">
+                  Top 10 Gainers
+                </div>
+                <div class="responsive-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Symbol</th>
+                        <th>LTP</th>
+                        <th>% Change</th>
+                        <th>QTY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="#"> <span>UPPER</span> </a>
+                        </th>
+                        <th><span>532.00</span></th>
+                        <th><span>9.1</span></th>
+                        <th><span>232,123,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NIFRA</a></th>
+
+                        <th>550.00</th>
+                        <th><span>9.1</span></th>
+                        <th><span>458,845,532.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">PLI</a></th>
+                        <th>745.00</th>
+                        <th><span>9.1</span></th>
+                        <th><span>123,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NABIL</a></th>
+                        <th>1402.00</th>
+                        <th><span>7.8</span></th>
+                        <th><span>134,968,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NLIC</a></th>
+                        <th>1800.34</th>
+                        <th><span>10.0</span></th>
+                        <th><span>59,654,456.00</span></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="loser">
+                <div id="loser-title" class="custom-title-second">
+                  Top 10 Losers
+                </div>
+                <div class="responsive-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Symbol</th>
+                        <th>LTP</th>
+                        <th>% Change</th>
+                        <th>QTY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="#"> <span>UPPER</span> </a>
+                        </th>
+                        <th><span>532.00</span></th>
+                        <th><span>9.1</span></th>
+                        <th><span>232,123,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NIFRA</a></th>
+
+                        <th>550.00</th>
+                        <th><span>9.1</span></th>
+                        <th><span>458,845,532.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">PLI</a></th>
+                        <th>745.00</th>
+                        <th><span>9.1</span></th>
+                        <th><span>123,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NABIL</a></th>
+                        <th>1402.00</th>
+                        <th><span>7.8</span></th>
+                        <th><span>134,968,456.00</span></th>
+                      </tr>
+                      <tr>
+                        <th><a href="#">NLIC</a></th>
+                        <th>1800.34</th>
+                        <th><span>10.0</span></th>
+                        <th><span>59,654,456.00</span></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Market overview ends -->
+    <footer>
+      <div class="main-footer"></div>
+    </footer>
+  </body>
+
+  <!-- My javascript code  -->
+  <script src="script.js"></script>
+  <!-- My javascript code  -->
+</html>

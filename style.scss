@@ -1,0 +1,489 @@
+// ------------ imported fonts --------------- //
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"); //Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,700;1,400&family=PT+Sans:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700;900&display=swap"); // Arsenal, PT Sans, Roboto
+
+// --------------- Header starts -------------- //
+
+header {
+  .head {
+    background: #abb248;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+// --------------- Header ends -------------- //
+
+// ------------ Analog meter starts ---------- //
+
+.analog-meter-wrapper {
+  position: relative;
+  margin: 60px 0px;
+  box-shadow: 0px 0px 4px 1px gainsboro;
+  border-radius: 5px;
+  padding: 30px;
+  .analog-meter {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    .bar-image {
+      width: fit-content;
+      position: relative;
+      img {
+        width: 450px;
+        margin: 0 auto;
+      }
+      .fear {
+        position: absolute;
+        bottom: -10px;
+        left: -20px;
+        color: red;
+        font-weight: 600;
+        font-family: "Montserrat";
+        font-size: 20px;
+      }
+      .good {
+        position: absolute;
+        bottom: -10px;
+        right: -35px;
+        text-align: right;
+        color: red;
+        font-weight: 600;
+        font-family: "Montserrat";
+        font-size: 20px;
+      }
+    }
+    .pin-image {
+      width: fit-content;
+      position: absolute;
+      bottom: 10px;
+      right: 41.5%;
+      img {
+        width: 100px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .title {
+    text-align: center;
+    color: #abb248;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+}
+.reactions {
+  width: 70%;
+  margin: 0 auto;
+
+  .reaction-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.time-as-of-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  .time-as-of {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 40px;
+    background: #b5d43b;
+    border-radius: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 999;
+  }
+}
+
+@media (max-width: 768px) {
+  .analog-meter-wrapper {
+    .analog-meter {
+      .bar-image {
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .analog-meter-wrapper {
+    .analog-meter {
+      .bar-image {
+        img {
+          width: 300px;
+        }
+      }
+      .pin-image {
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .analog-meter-wrapper {
+    .analog-meter {
+      .bar-image {
+        img {
+          width: 240px;
+        }
+        .good {
+          font-size: 16px;
+        }
+        .fear {
+          font-size: 16px;
+        }
+      }
+      .pin-image {
+        img {
+          width: 60px;
+        }
+      }
+    }
+    .title {
+      font-size: 35px;
+    }
+  }
+  .time-as-of-wrapper {
+    .time-as-of {
+      padding: 5px 20px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .analog-meter-wrapper {
+    .analog-meter {
+      .bar-image {
+        img {
+          width: 180px;
+        }
+      }
+      .pin-image {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+// ------------ Analog meter ends ---------- //
+
+// ------------ Market overview starts --------- //
+
+.custom-title {
+  border: 1px solid #66abff;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 10px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "montserrat", sans-serif;
+  margin-bottom: 15px;
+  color: #334;
+}
+
+.market-overview {
+  .summary {
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    .single {
+      padding: 15px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #dadada;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 0.5px;
+      .single-title {
+        width: 65%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+      }
+      .data {
+        width: 35%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #6f6f6f;
+      }
+    }
+    .single:hover {
+      background-color: #b5d43b;
+    }
+  }
+  .top-turnover {
+    margin-top: 30px;
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    table {
+      width: 100%;
+      border: 1px solid #66abff;
+      tr {
+        border-bottom: 1px solid #66abff;
+        th {
+          padding: 10px 10px;
+        }
+      }
+      tbody {
+        tr {
+          th:first-child {
+            a {
+              color: #66abff;
+              text-decoration: none;
+            }
+          }
+          th:not(:first-child) {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+        tr:last-child {
+          border-bottom: none;
+        }
+        tr:hover {
+          background-color: #c5e056;
+        }
+      }
+    }
+  }
+  .indicates {
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    table {
+      width: 100%;
+      th {
+        padding: 10px;
+      }
+      tr:hover {
+        background: #b5d43b;
+      }
+      th:first-child {
+        text-align: left;
+      }
+      th:not(:first-child) {
+        text-align: right;
+      }
+      tr {
+        border-bottom: 1px solid #dadada;
+        th:not(:first-child) {
+          font-weight: 500;
+          color: #333;
+        }
+      }
+      tr:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .sub-indicates {
+    margin-top: 30px;
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    table {
+      width: 100%;
+      th {
+        padding: 10px;
+      }
+      tr:hover {
+        background: #b5d43b;
+      }
+      th:first-child {
+        text-align: left;
+      }
+      th:not(:first-child) {
+        text-align: right;
+      }
+      tr {
+        border-bottom: 1px solid #dadada;
+        th:not(:first-child) {
+          font-weight: 500;
+          color: #333;
+        }
+      }
+      tr:last-child {
+        border-bottom: none;
+      }
+    }
+    .view-more {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+      color: rgb(0, 0, 100);
+      font-family: "PT Sans";
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 100);
+        span {
+          font-size: 14px;
+        }
+        span:before {
+          content: "";
+          padding: 5px;
+        }
+      }
+      a:hover {
+        color: rgb(0, 0, 140);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-table {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .market-overview {
+    .summary {
+      overflow-x: auto;
+    }
+    .top-turnover {
+      table {
+        overflow-x: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .market-overview {
+    .summary {
+      .single {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// ------------ Market overview ends --------- //
+
+// ------------ Top gainers and losers starts ------------- //
+
+.custom-title-second {
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "montserrat", sans-serif;
+}
+
+.top-gainer-loser {
+  .gainer {
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    #gainer-title {
+      background-color: #b5d43b;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #b5d43b;
+      tr {
+        border-bottom: 1px solid #b5d43b;
+        th {
+          padding: 10px 10px;
+        }
+      }
+      tbody {
+        tr {
+          th:first-child {
+            a {
+              color: #b5d43b;
+              text-decoration: none;
+            }
+          }
+          th:not(:first-child) {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+        tr:last-child {
+          border-bottom: none;
+        }
+        tr:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+  .loser {
+    box-shadow: 0px 0px 2px 1px #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    #loser-title {
+      background-color: #ff3e3e;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #ff3e3e;
+      tr {
+        border-bottom: 1px solid #ff3e3e;
+        th {
+          padding: 10px 10px;
+        }
+      }
+      tbody {
+        tr {
+          th:first-child {
+            a {
+              color: #ff3e3e;
+              text-decoration: none;
+            }
+          }
+          th:not(:first-child) {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+        tr:last-child {
+          border-bottom: none;
+        }
+        tr:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+}
+
+// ------------ Top gainers and losers ends ------------- //
+
+// ------------ Footer starts ------------- //
+
+footer {
+  .main-footer {
+    height: 100px;
+    background-color: #abb248;
+    margin-top: 30px;
+  }
+}
+// ------------ Footer endss ------------- //
